@@ -35,7 +35,7 @@ from
     employees
 where
     gender <> 'M'  AND
-    emp_no < '10050'; -- emp_no 이 10050보다 작고 gender가 M이 아닌 족너
+    emp_no < '10050'; -- emp_no 이 10050보다 작고 gender가 M이 아닌 조건
 
 -- BETWEEN
 select
