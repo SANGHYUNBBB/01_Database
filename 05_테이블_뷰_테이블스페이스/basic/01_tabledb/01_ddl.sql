@@ -20,12 +20,13 @@ create table usertbl (
 );
 drop table if exists buytbl;
 create table buytbl(
-                       userID char(8) not null primary key,
-                       name varchar(10) not null,
-                       birthyear int not null,
-                       addr char(2) not null,
-                       mobile1 varchar(3),
-                       mobile2 varchar(8) ,
-                       height smallint ,
-                       mDate date
+                       num int auto_increment not null primary key ,
+                       userID char(8) not null,
+                       prodName char(8) not null,
+                       groupName char(4),
+                       price int not null ,
+                       amount smallint not null,
+                   -- foreign key(현재테이블컬럼명)
+    -- references[참조할 테이블 명] (참조할 컬럼 명)
+    foreign key (userID) references usertbl(userID)
 )
