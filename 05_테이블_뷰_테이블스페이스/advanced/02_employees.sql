@@ -18,7 +18,7 @@ from
     employees e join dept_emp de
                      on e.emp_no = de.emp_no
                 join departments d
-                     on de.dept_no = d.dept_no
+                     on de.dept_no = d.dept_no;
 
 select * from EMP_DEPT_INFO
 where to_date ='9999-01-01'
