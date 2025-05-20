@@ -10,4 +10,5 @@ create table tbl5
 );
 
 -- tbl5가 가지고있는 인덱스 조회
+
 show index from tbl5;
